@@ -1,0 +1,8 @@
+pytz
+requests
+sympy
+tqdm
+tensorboard
+flask
+flask-cors
+paho-mqtt==1.6.1

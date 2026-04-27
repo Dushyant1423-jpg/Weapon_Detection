@@ -1,0 +1,38 @@
+Step 1: Install Visual Studio Code and set up the Python environment by following 
+the instructions provided in the PowerPoint presentation: "VS Code and Python Installation on Windows.pptx."
+
+Step 2: Navigate to the folder containing the Object Detection using Yolov7. In the address bar of the file explorer, 
+remove the path and type cmd, then press Enter. This will open the command prompt in the current directory.then type code .
+in command for opening vs code.
+
+Step 3: Open Visual Studio Code, then launch the terminal by navigating to View > Terminal or pressing `Ctrl + ```. In the terminal, 
+execute the following command to install the required dependencies:
+pip install -r requirements.txt
+
+
+# Download YOLOv7 repository and install requirements
+git clone https://github.com/WongKinYiu/yolov7
+cd yolov7
+!pip install -r requirements.txt
+
+
+
+curl  -o yolov7-tiny.pt https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-tiny.pt
+
+
+# f the current directory is not supported in the content, it needs to be moved into the yolov7 directory.
+cd yolov7
+
+
+# after taking limited amout of  data from train dataset  and test dataset then need to be changed dataset path in dataset.yaml(/content/gdrive/MyDrive/Object_Detection/Weapon_Detection/dataset.yaml)
+
+# finally the dataset.yaml file should be like this format and make sure about the path of dataset
+
+# train: /content/gdrive/MyDrive/Object_Detection/Weapon_Detection/Dataset/images/train
+# val: /content/gdrive/MyDrive/Object_Detection/Weapon_Detection/obj_train_data/images/test
+
+# # number of classes
+# nc: 6
+
+# # class names
+# names: ['pistol', 'smartphone', 'knife', 'monedero', 'billete', 'tarjeta']
